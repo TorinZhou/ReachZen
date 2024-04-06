@@ -1,0 +1,33 @@
+###
+GET http://localhost:5257/goals
+
+###
+GET http://localhost:5257/goals/11
+
+###
+POST http://localhost:5257/goals
+Content-Type: application/json
+
+{
+    "name": "Learn CISCO A+",
+    "description": "By doing this, I may have opportunity to get a support desk job",
+    "startingDate": "2024-04-06",
+    "dueDate": "2024-04-30"
+}
+
+###
+PUT http://localhost:5257/goals/1
+Content-Type: application/json
+
+{
+    "name": "Practice Communication SKill",
+    "description": "The most important skill",
+    "startingDate": "2024-04-06",
+    "dueDate": "2024-09-15"
+}
+
+###
+DELETE http://localhost:5257/goals/3
+
+
+
